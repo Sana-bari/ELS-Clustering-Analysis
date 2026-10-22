@@ -10,9 +10,6 @@ import os
 exp_path = os.path.join('data', 'processed', 'Experimental labels merged.csv')
 pseudo_path = os.path.join('data', 'processed', 'Pseudozernike lables merged.csv')
 
-# ORIGINAL PDF GAP: exp_df and pseudo_df are referenced without CSV-loading lines.
-# ORIGINAL PDF GAP: exp_feats and pseudo_feats are referenced without definitions.
-# Restore the actual lines from the original working script before execution.
 
 # Rename first column to 'Taxon'
 exp_df.rename(columns={exp_df.columns[0]: 'Taxon'}, inplace=True)
