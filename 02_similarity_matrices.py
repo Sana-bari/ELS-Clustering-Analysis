@@ -19,9 +19,7 @@ for sheet_name in excel_data.sheet_names:
     # Read the sheet into a DataFrame
     data = excel_data.parse(sheet_name)
 
-    # ORIGINAL PDF GAP: 'numerical_data' and 'labels' are used below but not defined.
-    # Restore their definitions from the actual working script before executing.
-    # Calculate the Pearson correlation matrix between rows (each colony with itself and every other colony)
+     # Calculate the Pearson correlation matrix between rows (each colony with itself and every other colony)
     row_correlation_matrix = np.corrcoef(numerical_data)
 
     # Store the similarity matrix with labels
